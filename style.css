@@ -77,32 +77,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-.card .button{
-    background-color: var(--bright-pink);
-    color: var(--white-smoke);
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 22px;
-    border-radius: 30px;
-    transition: .4s;
-}
-.card .button:hover{
-    background-color: transparent;
-    border: 2px solid var(--bright-pink);
-    cursor: pointer;
-}
-
-
-
-
 footer{
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -155,3 +129,34 @@ footer p:nth-child(2){
     font-size: 14px;
 }
 
+
+@media screen and (max-width: 768px){
+    
+.calculator_grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 50px);
+}
+
+.calculator_grid > button{
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid white; 
+}
+
+
+.output .previous-operand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+
+.output .current-operand{
+    color:white;
+    font-size: 1.5rem;
+}
+
+
+}
