@@ -1,8 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-}
 
 :root{
     --bright-pink:  hsl(170, 45%, 43%);
@@ -10,11 +5,21 @@
     --card-color: #191919;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+
 header{
     display: flex;
     justify-content: center;
-    color:  #00AAFF;
-    font-size: 40px;
+    color:  #00AA;
+    font-size: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    box-sizing: border-box;
 }
 
 header:hover{
@@ -22,10 +27,17 @@ header:hover{
     transition: .4s;
 }
 
+
 body{
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #00AAFF, #00FF6c, #00FF6f,  #00AAFF);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-width: 50vh;
+    min-height: 50vh;
+    background: linear-gradient(to right, #00AAFF, #00FF6c, #00FF6c,
+    #00FF6c,  #00AAFF);
 }
 
 .calculator_grid{
@@ -78,7 +90,6 @@ body{
 
 
 footer{
-    font-family: 'Roboto', sans-serif;
     position: relative;
     width: 100%;
     height: 400px;
@@ -94,7 +105,7 @@ footer p:nth-child(1){
     font-weight: bold;
 }
 footer p:nth-child(2){
-    color:var(--card-color);
+    color: var(--card-color);
     font-size: 17px; 
     width: 500px;
     text-align: center;
@@ -130,7 +141,31 @@ footer p:nth-child(2){
 }
 
 
+
+
+
+
 @media screen and (max-width: 768px){
+
+    
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:  #00AAFF;
+    font-size: 20px;
+}
+
+header:hover{
+    color: var(--white-smoke);
+    transition: .4s;
+}
+
+header h1{
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+
+}
     
 .calculator_grid{
     display: grid;
@@ -139,12 +174,18 @@ footer p:nth-child(2){
     min-height: 100vh;
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: minmax(80px, auto) repeat(5, 50px);
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 }
 
 .calculator_grid > button{
     cursor: pointer;
     font-size: 1rem;
-    border: 1px solid white; 
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585; 
+}
+
+.output{
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 }
 
 
