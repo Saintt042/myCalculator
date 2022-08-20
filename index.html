@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="./images/calculator-img.jpeg" rel="icon" type="image/x-icon" />
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Alinwachukwu's Calculator</header>
+    <div class="calculator_grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+
+        <!-- set after html, style are complete: why its is data class is to observe which parts are affected by javascript and/or css:: data_operand is a class name for specific buttons to be called in javascript -->
+        <button data-all-clear class="span_two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span_two">=</button>
+    </div>
+    
+</body>
+
+
+<footer>
+    <p>Alinwachukwu Michael</p>
+    <p>Reach me directly via any of the below channels:</p>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/alinwachukwu-michael-17a537235" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://wa.me/+2348078116136" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/SaintMichaell" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/saintt042/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <p class="end">CopyRight By Alinwachukwu Michael</p>
+</footer>
+</html>
